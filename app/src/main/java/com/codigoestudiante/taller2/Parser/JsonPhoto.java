@@ -12,9 +12,7 @@ import java.util.List;
 /**
  * Created by root on 4/10/17.
  */
-
 public class JsonPhoto {
-
 
     public static List<ModelPhoto> getData(String content) throws JSONException {
         JSONArray jsonArray = new JSONArray(content);
@@ -26,7 +24,6 @@ public class JsonPhoto {
             modelPhoto.setThumbnailUrl(item.getString("thumbnailUrl"));
             modelPhoto.setFoto(item.getString("url"));
             modelPhoto.setId(item.getInt("id"));
-
             modelPhotoList.add(modelPhoto);
         }
         return modelPhotoList;

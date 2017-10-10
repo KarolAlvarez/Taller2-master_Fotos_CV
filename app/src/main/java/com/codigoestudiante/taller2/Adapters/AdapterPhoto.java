@@ -48,7 +48,8 @@ public class AdapterPhoto extends RecyclerView.Adapter<AdapterPhoto.ViewHolder> 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
-        Picasso.with(context).load(modelPhotoList.get(position).getArrayPhotos()).into((holder.foto));
+
+     Picasso.with(context).load(modelPhotoList.get(position).getArrayPhotos()).into((holder.foto));
 
         // Encargado de trabajar con el item.xml y sus componentes
         //Picasso.with(context).load(modelPhotoList.get(position).getFoto()).into((holder.foto));
